@@ -1,0 +1,25 @@
+module matrixPresenter(input clk50,
+		output [2:0] matrixColor1,
+		output [2:0] matrixColor2,
+		output [4:0]matrixRow,
+		output matrixClk,
+		output matrixLatch,
+		output matrixOE
+		input startNewScreen, //If HIFH, will do the next screen
+		input continueLine, //If HIGH, will do the next line
+		output [4:0] currentRow,  //Physical row (The one sent to the matrix)
+		output [9:0]currentColumn, //Physical column (The one sent to the matrix)
+		input [0:23]colorData);  //Color data of the current pixel. Whithin the same row, if currentColumn is changed, this value should be available in the next clock cycle
+		  
+wire clk1sec;
+
+
+assign matrixOE=1'b0;
+
+
+Downclocker downclocker1sec(clk50,clk1sec,32'd50_000_000);
+
+		
+		
+		
+endmodule

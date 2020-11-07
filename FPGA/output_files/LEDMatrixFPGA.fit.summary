@@ -1,0 +1,18 @@
+Fitter Status : Successful - Mon Jul 08 20:05:17 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : LEDMatrixFPGA
+Top-level Entity Name : LEDMatrixFPGA
+Family : MAX 10
+Device : 10M08DAF484C8GES
+Timing Models : Preliminary
+Total logic elements : 1,422 / 8,064 ( 18 % )
+    Total combinational functions : 1,291 / 8,064 ( 16 % )
+    Dedicated logic registers : 584 / 8,064 ( 7 % )
+Total registers : 584
+Total pins : 75 / 250 ( 30 % )
+Total virtual pins : 0
+Total memory bits : 26,624 / 387,072 ( 7 % )
+Embedded Multiplier 9-bit elements : 4 / 48 ( 8 % )
+Total PLLs : 1 / 2 ( 50 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 1 ( 0 % )

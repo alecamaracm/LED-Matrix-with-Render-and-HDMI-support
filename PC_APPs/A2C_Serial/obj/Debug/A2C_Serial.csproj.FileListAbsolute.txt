@@ -1,0 +1,6 @@
+D:\Sync\Programacion\LEDMatrix\LED_MATRIX_PC\A2C_Serial\bin\Debug\A2C_Serial.dll
+D:\Sync\Programacion\LEDMatrix\LED_MATRIX_PC\A2C_Serial\bin\Debug\A2C_Serial.pdb
+D:\Sync\Programacion\LEDMatrix\LED_MATRIX_PC\A2C_Serial\obj\Debug\A2C_Serial.csprojAssemblyReference.cache
+D:\Sync\Programacion\LEDMatrix\LED_MATRIX_PC\A2C_Serial\obj\Debug\A2C_Serial.csproj.CoreCompileInputs.cache
+D:\Sync\Programacion\LEDMatrix\LED_MATRIX_PC\A2C_Serial\obj\Debug\A2C_Serial.dll
+D:\Sync\Programacion\LEDMatrix\LED_MATRIX_PC\A2C_Serial\obj\Debug\A2C_Serial.pdb

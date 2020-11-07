@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon Jul 08 20:05:01 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : LEDMatrixFPGA
+Top-level Entity Name : LEDMatrixFPGA
+Family : MAX 10
+Total logic elements : 1,515
+    Total combinational functions : 1,289
+    Dedicated logic registers : 629
+Total registers : 629
+Total pins : 75
+Total virtual pins : 0
+Total memory bits : 26,624
+Embedded Multiplier 9-bit elements : 4
+Total PLLs : 1
+UFM blocks : 0
+ADC blocks : 0

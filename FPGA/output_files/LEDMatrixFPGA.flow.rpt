@@ -1,0 +1,136 @@
+Flow report for LEDMatrixFPGA
+Mon Oct 07 21:12:14 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Mon Oct 07 21:12:14 2019       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; LEDMatrixFPGA                               ;
+; Top-level Entity Name              ; LEDMatrixFPGA                               ;
+; Family                             ; MAX 10                                      ;
+; Device                             ; 10M08DAF484C8GES                            ;
+; Timing Models                      ; Preliminary                                 ;
+; Total logic elements               ; 1,422 / 8,064 ( 18 % )                      ;
+;     Total combinational functions  ; 1,291 / 8,064 ( 16 % )                      ;
+;     Dedicated logic registers      ; 584 / 8,064 ( 7 % )                         ;
+; Total registers                    ; 584                                         ;
+; Total pins                         ; 75 / 250 ( 30 % )                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 26,624 / 387,072 ( 7 % )                    ;
+; Embedded Multiplier 9-bit elements ; 4 / 48 ( 8 % )                              ;
+; Total PLLs                         ; 1 / 2 ( 50 % )                              ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
+; ADC blocks                         ; 0 / 1 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 07/08/2019 20:04:45 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; LEDMatrixFPGA       ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                        ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 259750996983619.156260908525652        ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; Pll1_bb.v                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; Pll1.ppf                               ; --            ; --          ; --         ;
+; MISC_FILE                           ; PLL_SRAM_bb.v                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; PLL_SRAM.ppf                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; MATRIX_ROW_BUFFER_bb.v                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; FIFO_A2C_bb.v                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; MATRIX_ROW_BUFFER_2_bb.v               ; --            ; --          ; --         ;
+; MISC_FILE                           ; ReceiveRowBuffer_bb.v                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; RawRowBuffer_bb.v                      ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4844 MB             ; 00:00:20                           ;
+; Fitter               ; 00:00:15     ; 1.3                     ; 5727 MB             ; 00:00:15                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4699 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.6                     ; 4844 MB             ; 00:00:05                           ;
+; Power Analyzer       ; 00:00:15     ; 1.1                     ; 4840 MB             ; 00:00:15                           ;
+; Total                ; 00:00:50     ; --                      ; --                  ; 00:00:56                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-N4M5FSC  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-N4M5FSC  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-N4M5FSC  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-N4M5FSC  ; Windows 10 ; 10.0       ; x86_64         ;
+; Power Analyzer       ; DESKTOP-V3LM80I  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off LEDMatrixFPGA -c LEDMatrixFPGA
+quartus_fit --read_settings_files=off --write_settings_files=off LEDMatrixFPGA -c LEDMatrixFPGA
+quartus_asm --read_settings_files=off --write_settings_files=off LEDMatrixFPGA -c LEDMatrixFPGA
+quartus_sta LEDMatrixFPGA -c LEDMatrixFPGA
+quartus_pow --read_settings_files=on --write_settings_files=off LEDMatrixFPGA -c LEDMatrixFPGA
+
+
+

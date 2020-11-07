@@ -1,0 +1,253 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LED[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[6]",
+					"strict" : false
+				},
+				{
+					"name" : "matrixColor1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "matrixColor1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "matrixColor1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "matrixColor2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "matrixColor2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "matrixColor2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "matrixRow[0]",
+					"strict" : false
+				},
+				{
+					"name" : "matrixRow[1]",
+					"strict" : false
+				},
+				{
+					"name" : "matrixRow[2]",
+					"strict" : false
+				},
+				{
+					"name" : "matrixRow[3]",
+					"strict" : false
+				},
+				{
+					"name" : "matrixRow[4]",
+					"strict" : false
+				},
+				{
+					"name" : "matrixClk",
+					"strict" : false
+				},
+				{
+					"name" : "matrixLatch",
+					"strict" : false
+				},
+				{
+					"name" : "matrixOE",
+					"strict" : false
+				},
+				{
+					"name" : "CEC",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_BA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_BA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_CASn",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_CSn",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_RASn",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_WEn",
+					"strict" : false
+				},
+				{
+					"name" : "FLASH_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "FLASH_CS",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[13]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[14]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[15]",
+					"strict" : false
+				},
+				{
+					"name" : "FLASH_SO",
+					"strict" : false
+				},
+				{
+					"name" : "FLASH_HOLD",
+					"strict" : false
+				},
+				{
+					"name" : "FLASH_SI",
+					"strict" : false
+				},
+				{
+					"name" : "FLASH_WP",
+					"strict" : false
+				},
+				{
+					"name" : "A2C_DT",
+					"strict" : false
+				},
+				{
+					"name" : "A2C_CK",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

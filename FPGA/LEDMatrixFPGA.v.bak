@@ -1,0 +1,7 @@
+module LEDMatrixFPGA(
+		input LED1)
+		
+assign LED1=1´b1;
+		
+		
+endmodule

@@ -1,0 +1,147 @@
+
+State Machine - |LEDMatrixFPGA|state
+Name state.mediaRequest2 state.mediaRequest1 state.changeBrightness state.end2 state.end1 state.writeScreen2 state.writeScreen1 state.0000 state.mediaRequest15 
+state.0000 0 0 0 0 0 0 0 0 0 
+state.writeScreen1 0 0 0 0 0 0 1 1 0 
+state.writeScreen2 0 0 0 0 0 1 0 1 0 
+state.end1 0 0 0 0 1 0 0 1 0 
+state.end2 0 0 0 1 0 0 0 1 0 
+state.changeBrightness 0 0 1 0 0 0 0 1 0 
+state.mediaRequest1 0 1 0 0 0 0 0 1 0 
+state.mediaRequest2 1 0 0 0 0 0 0 1 0 
+state.mediaRequest15 0 0 0 0 0 0 0 1 1 
+
+State Machine - |LEDMatrixFPGA|A2CHandler:handler|state2
+Name state2.get3 state2.get2 state2.get1 state2.idle 
+state2.idle 0 0 0 0 
+state2.get1 0 0 1 1 
+state2.get2 0 1 0 1 
+state2.get3 1 0 0 1 
+
+State Machine - |LEDMatrixFPGA|A2CHandler:handler|state
+Name state.newData 
+state.idle 0 
+state.newData 1 
+
+State Machine - |LEDMatrixFPGA|frameBuffer:frameBuffer|state
+Name state.STUCK state.writingDispose state.writingSingleReadingEnd state.writingSingleReading state.writingSingleStartRead state.writingSinglePrecharge state.writingSingleEnd state.writingSingleWRITE state.writingSingleACTIVE state.writingWHOLEROWPrecharge state.writingWHOLEROWEnd state.writingWHOLEROWWRITEALL state.writingWHOLEROWWRITE state.writingWHOLEROWACTIVE state.writingCHOOSE state.readingDispose state.readingPrecharge state.readingEnd state.readingRow state.readingStartRead state.readingStart state.idle state.initializeREGISTER state.initializeAUTOREFRESH2 state.initializeAUTOREFRESH1 state.waiter state.initializePRECHARGE state.reset 
+state.reset 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.initializePRECHARGE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.waiter 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.initializeAUTOREFRESH1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.initializeAUTOREFRESH2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.initializeREGISTER 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.idle 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.readingStart 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.readingStartRead 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.readingRow 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.readingEnd 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.readingPrecharge 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.readingDispose 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.writingCHOOSE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.writingWHOLEROWACTIVE 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.writingWHOLEROWWRITE 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.writingWHOLEROWWRITEALL 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.writingWHOLEROWEnd 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.writingWHOLEROWPrecharge 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.writingSingleACTIVE 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.writingSingleWRITE 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.writingSingleEnd 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.writingSinglePrecharge 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.writingSingleStartRead 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.writingSingleReading 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.writingSingleReadingEnd 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.writingDispose 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.STUCK 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |LEDMatrixFPGA|frameBuffer:frameBuffer|stateAfterWait
+Name stateAfterWait.writingDispose stateAfterWait.writingSingleReading stateAfterWait.writingSingleStartRead stateAfterWait.writingSinglePrecharge stateAfterWait.writingSingleWRITE stateAfterWait.writingSingleACTIVE stateAfterWait.writingWHOLEROWPrecharge stateAfterWait.writingWHOLEROWWRITE stateAfterWait.writingWHOLEROWACTIVE stateAfterWait.readingDispose stateAfterWait.readingPrecharge stateAfterWait.readingRow stateAfterWait.readingStartRead stateAfterWait.idle stateAfterWait.initializeREGISTER stateAfterWait.initializeAUTOREFRESH2 stateAfterWait.initializeAUTOREFRESH1 stateAfterWait.initializePRECHARGE stateAfterWait.reset 
+stateAfterWait.reset 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+stateAfterWait.initializePRECHARGE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+stateAfterWait.initializeAUTOREFRESH1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+stateAfterWait.initializeAUTOREFRESH2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+stateAfterWait.initializeREGISTER 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+stateAfterWait.idle 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+stateAfterWait.readingStartRead 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+stateAfterWait.readingRow 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+stateAfterWait.readingPrecharge 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+stateAfterWait.readingDispose 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+stateAfterWait.writingWHOLEROWACTIVE 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+stateAfterWait.writingWHOLEROWWRITE 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+stateAfterWait.writingWHOLEROWPrecharge 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+stateAfterWait.writingSingleACTIVE 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stateAfterWait.writingSingleWRITE 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stateAfterWait.writingSinglePrecharge 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stateAfterWait.writingSingleStartRead 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stateAfterWait.writingSingleReading 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stateAfterWait.writingDispose 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |LEDMatrixFPGA|frameBuffer:frameBuffer|mediaDataGatherer:flashGatherer|stateAfterReceiveByte
+Name 
+stateAfterReceiveByte.getFeature4 
+
+State Machine - |LEDMatrixFPGA|frameBuffer:frameBuffer|mediaDataGatherer:flashGatherer|stateAfterSendByte
+Name stateAfterSendByte.readX4_1 stateAfterSendByte.readReadRow4 stateAfterSendByte.readReadRow3 stateAfterSendByte.readReadRow2 stateAfterSendByte.getFeature3 stateAfterSendByte.getFeature2 stateAfterSendByte.readPage5 stateAfterSendByte.readPage4 stateAfterSendByte.readPage3 stateAfterSendByte.readPage2 
+stateAfterSendByte.readPage2 0 0 0 0 0 0 0 0 0 0 
+stateAfterSendByte.readPage3 0 0 0 0 0 0 0 0 1 1 
+stateAfterSendByte.readPage4 0 0 0 0 0 0 0 1 0 1 
+stateAfterSendByte.readPage5 0 0 0 0 0 0 1 0 0 1 
+stateAfterSendByte.getFeature2 0 0 0 0 0 1 0 0 0 1 
+stateAfterSendByte.getFeature3 0 0 0 0 1 0 0 0 0 1 
+stateAfterSendByte.readReadRow2 0 0 0 1 0 0 0 0 0 1 
+stateAfterSendByte.readReadRow3 0 0 1 0 0 0 0 0 0 1 
+stateAfterSendByte.readReadRow4 0 1 0 0 0 0 0 0 0 1 
+stateAfterSendByte.readX4_1 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |LEDMatrixFPGA|frameBuffer:frameBuffer|mediaDataGatherer:flashGatherer|stateAfterReadRow
+Name 
+stateAfterReadRow.PREfetchHeaderVars 
+
+State Machine - |LEDMatrixFPGA|frameBuffer:frameBuffer|mediaDataGatherer:flashGatherer|state
+Name state.fetchHeaderVars state.PREfetchHeaderVars state.readX4_4 state.readX4_3 state.readX4_2 state.readX4_1 state.readReadRow4 state.readReadRow3 state.readReadRow2 state.readReadRow1 state.receiveByte3 state.receiveByte2 state.receiveByte1 state.getFeature4 state.getFeature3 state.getFeature2 state.getFeature1 state.readPage5 state.readPage4 state.readPage3 state.readPage2 state.startReadRow state.sendByte3 state.sendByte25 state.sendByte2 state.sendByte1 state.fetchVars state.idle 
+state.idle 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.fetchVars 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.sendByte1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.sendByte2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.sendByte25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.sendByte3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.startReadRow 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.readPage2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.readPage3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.readPage4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.readPage5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.getFeature1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.getFeature2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.getFeature3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.getFeature4 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.receiveByte1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.receiveByte2 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.receiveByte3 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.readReadRow1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.readReadRow2 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.readReadRow3 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.readReadRow4 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.readX4_1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.readX4_2 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.readX4_3 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.readX4_4 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.PREfetchHeaderVars 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.fetchHeaderVars 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |LEDMatrixFPGA|matrixPresenter:matrixPresenter|writeState
+Name writeState.write1 
+writeState.write0 0 
+writeState.write1 1 
+
+State Machine - |LEDMatrixFPGA|matrixPresenter:matrixPresenter|state
+Name state.waitingForRow state.requestRow state.st5 state.st4 state.st3 state.st2 state.st1 state.waiting state.writeRow state.reset 
+state.reset 0 0 0 0 0 0 0 0 0 0 
+state.writeRow 0 0 0 0 0 0 0 0 1 1 
+state.waiting 0 0 0 0 0 0 0 1 0 1 
+state.st1 0 0 0 0 0 0 1 0 0 1 
+state.st2 0 0 0 0 0 1 0 0 0 1 
+state.st3 0 0 0 0 1 0 0 0 0 1 
+state.st4 0 0 0 1 0 0 0 0 0 1 
+state.st5 0 0 1 0 0 0 0 0 0 1 
+state.requestRow 0 1 0 0 0 0 0 0 0 1 
+state.waitingForRow 1 0 0 0 0 0 0 0 0 1 

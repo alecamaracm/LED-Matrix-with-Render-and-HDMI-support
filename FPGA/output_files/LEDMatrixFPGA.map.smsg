@@ -1,0 +1,4 @@
+Warning (10268): Verilog HDL information at LEDMatrixFPGA.v(167): always construct contains both blocking and non-blocking assignments File: D:/Sync/Programacion/LEDMatrix/FPGA/LEDMatrixFPGA.v Line: 167
+Warning (10268): Verilog HDL information at MatrixPresenter.v(88): always construct contains both blocking and non-blocking assignments File: D:/Sync/Programacion/LEDMatrix/FPGA/MatrixPresenter.v Line: 88
+Warning (10268): Verilog HDL information at frameBuffer.v(185): always construct contains both blocking and non-blocking assignments File: D:/Sync/Programacion/LEDMatrix/FPGA/frameBuffer.v Line: 185
+Warning (10268): Verilog HDL information at mediaDataGatherer.v(126): always construct contains both blocking and non-blocking assignments File: D:/Sync/Programacion/LEDMatrix/FPGA/mediaDataGatherer.v Line: 126

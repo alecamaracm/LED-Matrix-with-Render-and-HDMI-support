@@ -1,0 +1,89 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'pllSDRAM|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -20.001
+TNS   : -550.164
+
+Type  : Slow 1200mV 85C Model Setup 'A2CHandler:handler|PushButton_Debouncer:deb|PB_state'
+Slack : -2.285
+TNS   : -155.777
+
+Type  : Slow 1200mV 85C Model Hold 'pllSDRAM|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.485
+TNS   : -0.485
+
+Type  : Slow 1200mV 85C Model Hold 'A2CHandler:handler|PushButton_Debouncer:deb|PB_state'
+Slack : 0.342
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'A2CHandler:handler|PushButton_Debouncer:deb|PB_state'
+Slack : -1.487
+TNS   : -130.856
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pllSDRAM|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 4.671
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk50'
+Slack : 9.925
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'pllSDRAM|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -17.734
+TNS   : -469.693
+
+Type  : Slow 1200mV 0C Model Setup 'A2CHandler:handler|PushButton_Debouncer:deb|PB_state'
+Slack : -2.063
+TNS   : -140.534
+
+Type  : Slow 1200mV 0C Model Hold 'pllSDRAM|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.500
+TNS   : -0.500
+
+Type  : Slow 1200mV 0C Model Hold 'A2CHandler:handler|PushButton_Debouncer:deb|PB_state'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'A2CHandler:handler|PushButton_Debouncer:deb|PB_state'
+Slack : -1.487
+TNS   : -130.856
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pllSDRAM|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 4.682
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk50'
+Slack : 9.935
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'pllSDRAM|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -1.246
+TNS   : -38.470
+
+Type  : Fast 1200mV 0C Model Setup 'A2CHandler:handler|PushButton_Debouncer:deb|PB_state'
+Slack : -0.300
+TNS   : -8.896
+
+Type  : Fast 1200mV 0C Model Hold 'pllSDRAM|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.251
+TNS   : -0.271
+
+Type  : Fast 1200mV 0C Model Hold 'A2CHandler:handler|PushButton_Debouncer:deb|PB_state'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'A2CHandler:handler|PushButton_Debouncer:deb|PB_state'
+Slack : -1.000
+TNS   : -88.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pllSDRAM|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 4.719
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk50'
+Slack : 9.649
+TNS   : 0.000
+
+------------------------------------------------------------
