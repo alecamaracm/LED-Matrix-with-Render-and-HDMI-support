@@ -54,9 +54,13 @@
 [![Product Name Screen Shot][screenshot1]](https://example.com)
 
 This project is a LED Matrix driver (Currently only 32:1 matrices supported) with support for an HDMI input and basic "GPU like" overlay rendering commands.
+
 The LED matrix is directly driven from the FPGA (Cyclone 4,5 and MAX8 tested) and supports a pixel rate of up to 135Mhz.
+
 The refresh rate directly depends on the number of color bits per pixel and the pixel clock, currently supporting RGB 16bpp at 60Hz with a pixel clock of 24Mhz.
+
 All flash copy/rendering commmands can be sent from the PC and go through an ESP32 which acts as a command buffer for the FPGA.
+
 See screenshots below for working examples.
 
 <!-- GETTING STARTED -->
@@ -65,7 +69,9 @@ See screenshots below for working examples.
 To get a local copy of the project and follow these steps.
 
 1. Install Quartus (V13.1 or newer)
+
 2. Install the ESP-IDF (Tested on V2, might working in V3 with some small changes)
+
 3. Connect all the hardware as described in the PCB schematics
 
 [![Product Name Screen Shot][screenshot3]](https://example.com)
@@ -75,6 +81,9 @@ To get a local copy of the project and follow these steps.
 
 The easiest example that doesn't require adding the HDMI support is to simply connect the board to your computer through USB, run the desktop app and upload some media files.
 The first uploaded picture should be automatically displayed on the matrix.
+
+You can also use the desktop app to render some basic patterns: 
+
 [![Product Name Screen Shot][screenshot2]](https://example.com)
 
 <!-- ROADMAP -->
