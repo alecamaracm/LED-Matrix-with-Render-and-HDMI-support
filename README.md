@@ -45,6 +45,8 @@ The refresh rate directly depends on the number of color bits per pixel and the 
 
 All flash copy/rendering commands can be sent from the PC and go through an ESP32 which acts as a command buffer for the FPGA.
 
+Other features: USB audio decoding/encoding and USB hub. 
+
 See the screenshots below for working examples.
 
 <!-- GETTING STARTED -->
