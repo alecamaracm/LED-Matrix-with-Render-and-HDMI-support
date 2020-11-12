@@ -1,19 +1,3 @@
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -59,9 +43,9 @@ The LED matrix is directly driven from the FPGA (Cyclone 4,5 and MAX8 tested) an
 
 The refresh rate directly depends on the number of color bits per pixel and the pixel clock, currently supporting RGB 16bpp at 60Hz with a pixel clock of 24Mhz.
 
-All flash copy/rendering commmands can be sent from the PC and go through an ESP32 which acts as a command buffer for the FPGA.
+All flash copy/rendering commands can be sent from the PC and go through an ESP32 which acts as a command buffer for the FPGA.
 
-See screenshots below for working examples.
+See the screenshots below for working examples.
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -79,7 +63,7 @@ To get a local copy of the project and follow these steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-The easiest example that doesn't require adding the HDMI support is to simply connect the board to your computer through USB, run the desktop app and upload some media files.
+The easiest example that doesn't require adding the HDMI support is to simply connect the board to your computer through USB, run the desktop app, and upload some media files.
 The first uploaded picture should be automatically displayed on the matrix.
 
 You can also use the desktop app to render some basic patterns: 
@@ -88,7 +72,7 @@ You can also use the desktop app to render some basic patterns:
 
 <!-- ROADMAP -->
 ## Roadmap
-This project has been abandoned as of right now but it is in a "usable" state. There is a decent chance that I will come back to it in the near future, but no guarantees given.
+This project has been abandoned as of right now but it is in a "usable" state. There is a decent chance that I will come back to it in the near future, but no guarantees are given.
 
 TODO list:
 1. Improve matrix performance during low light conditions.
@@ -113,14 +97,14 @@ Feel free to contribute to the project. Any changes you propose will be quickly 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License.
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/alecamaracm) - [alecamar] AT [hotmail.es]
+Alejandro Cabrerizo - [@alecamaracm](https://twitter.com/alecamaracm) - [alecamar] AT [hotmail.es]
 
 Project Link: [https://github.com/alecamaracm/LED-Matrix-with-Render-and-HDMI-support](https://github.com/alecamaracm/LED-Matrix-with-Render-and-HDMI-support)
 
@@ -129,24 +113,11 @@ Project Link: [https://github.com/alecamaracm/LED-Matrix-with-Render-and-HDMI-su
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* [https://twitter.com/peterajamieson](To Peter Jamieson, for being an awesome proffesor and introducing me to the world of digital systems.)
-* [https://github.com/othneildrew/Best-README-Template](To othneildrew for creating this awesome README template.)
+* [To Peter Jamieson, for being an awesome professor and introducing me to the world of digital systems.](https://twitter.com/peterajamieson)
+* [To othneildrew for creating this awesome README template.](https://github.com/othneildrew/Best-README-Template)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/alecamaracm/repo.svg?style=flat-square
-[contributors-url]: https://github.com/alecamaracm/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/alecamaracm/repo.svg?style=flat-square
-[forks-url]: https://github.com/alecamaracm/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/alecamaracm/repo.svg?style=flat-square
-[stars-url]: https://github.com/alecamaracm/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/alecamaracm/repo.svg?style=flat-square
-[issues-url]: https://github.com/alecamaracm/repo/issues
-[license-shield]: https://img.shields.io/github/license/alecamaracm/repo.svg?style=flat-square
-[license-url]: https://github.com/alecamaracm/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/alecamaracm
 [screenshot1]: images/MatrixLS.jpeg
 [screenshot2]: images/PatternRendering.jpeg
 [screenshot3]: images/PCB.jpeg
